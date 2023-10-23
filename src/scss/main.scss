@@ -1,0 +1,45 @@
+@use './partials/general' as *;
+@use './partials/vars' as *;
+
+@import '/node_modules/bootstrap/scss/bootstrap.scss';
+@import '@fontsource/abril-fatface';
+@import '@fontsource/abril-fatface/400.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto';
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 15px 0;
+}
+
+h1 {
+	font-size: 85px;
+}
+
+h2 {
+	font-size: 70px;
+}
+
+h1,
+h2,
+h3 {
+	color: #B0B0B0;
+	font-family: 'Abril Fatface', sans-serif;
+}
+
+
+h3,
+h4,
+h5,
+h6 {
+	color: #BE9359;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
