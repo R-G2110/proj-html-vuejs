@@ -54,11 +54,21 @@ ul {
 }
 
 .rg-card {
+	padding: 20px;
 	flex-basis: 32%;
 	text-align: center;
 	border: none !important;
 	align-items: center;
 	--bs-card-inner-border-radius: 0px !important;
+	cursor: pointer;
+	&:hover {
+		color: #BE9359;
+		background-color: #F5F5F5;
+	}
+	&:hover img{
+		scale: 1.1;
+	}
+
 }
 .triangle {
 	height: 100px;
