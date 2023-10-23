@@ -48,12 +48,22 @@ export default {
 			<h6>WE HAVE YOU COVERED</h6>
 			<h2>Avada Grooming Products</h2>
 			<swiper
+				:pagination="{
+      		clickable: true,
+    		}"
+    		:navigation="true"
 				:width="1000"
     		:slidesPerView="3"
-    		:spaceBetween="130"
+    		:spaceBetween="150"
   		  :loop="true"
   		  :modules="modules"
   		  class="mySwiper"
+				@swiper="onSwiper"
+				@slideChange="onSlideChange"
+				:autoplay="{
+  		  	delay: 3000,
+  		  	disableOnInteraction: false,
+  	  }"
   		>
   		  <swiper-slide
 				v-for="(item, index) in store.shopItems"

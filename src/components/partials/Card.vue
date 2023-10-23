@@ -27,7 +27,7 @@ export default {
 
 	.card-img {
 		object-fit: cover;
-		
+		overflow: hidden;
 			
 	}
 	.card-text {

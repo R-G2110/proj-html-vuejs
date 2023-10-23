@@ -1,6 +1,16 @@
 <script>
+
+import { store } from '../data/store'
+import Dropdown from './partials/Dropdown.vue';
+
 export default {
-	name: 'Header'
+	name: 'Header',
+	components: {
+		Dropdown
+	},
+	data() {
+		store
+	}
 }
 </script>
 
@@ -14,6 +24,26 @@ export default {
 				<div class="nav-menu d-flex ">
 					<i class="fa-solid fa-cart-shopping"></i>
 					<i class="fa-solid fa-bars"></i>
+					
+					<div class="aselect" :data-value="value" :data-list="list">
+	    <div class="selector" @click="toggle()">
+	        <div class="label">
+				    <span>{{ value }}</span>
+	        </div>
+			<div class="arrow" :class="{ expanded : visible }"></div>
+	        <div :class="{ hidden : !visible, visible }">
+	            <ul>
+	                <li 
+										:class="{ current : item === value }" 
+										v-for="(item, index) in list" 
+										:key="index"
+										@click="select(item)"
+									>{{ item }}</li>
+	            </ul>
+	        </div>
+	    </div>
+	</div>
+
 				</div>
 			</div>
 		</div>

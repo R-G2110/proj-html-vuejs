@@ -91,6 +91,10 @@ export default {
 			width: 1150px;
 			height: 470px;
 			border-top: 4px solid #BE9359;
+			cursor: pointer;
+			&:hover {
+
+			}
 			.featured-product-img {
 				flex-basis: 40%;
 				height: 100%;

@@ -84,5 +84,8 @@ export const store = reactive({
 			overview: "Some quick example text to build on the card title and make up the bulk of the card's content.",
 			image: '/main-blog/avadabarbers-ourservice-blog-320x202.jpg'
 		},
-	]
+	],
+	value: 'Select a Fruit',
+	list: ["Orange","Apple","Kiwi", "Lemon", "Pineapple"],
+  visible: false
 })
